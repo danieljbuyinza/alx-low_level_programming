@@ -5,7 +5,8 @@
 
 /* betty style doc for function main goes there */
 /* 
- * main - Print whether the number stored in the variable n is positive or negative */
+ * main - Print whether number stored in variable is positive or negative
+ * */
 int main(void)
 {
 	int n;
