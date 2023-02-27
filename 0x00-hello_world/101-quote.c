@@ -4,13 +4,9 @@
 
 /**
  * filedes - File descriptor
- */
-
-/**
+ *
  * buf - Pointer to data
- */
-
-/**
+ *
  * nbyte - Variable holding integer
  */
 
