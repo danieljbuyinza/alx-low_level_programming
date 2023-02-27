@@ -2,13 +2,13 @@
 
 /* Printing without functions */
 
+/* filedes - File descriptor */
+
+/* buf - Pointer to data */
+
+/* nbyte - Variable holding integer */
+
 /**
- * filedes - File descriptor
- *
- * buf - Pointer to data
- *
- * nbyte - Variable holding integer
- *
  * main - Entry point
  *
  * Return: 1 (Error)
