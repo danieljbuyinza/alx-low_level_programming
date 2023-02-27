@@ -3,11 +3,7 @@
 /* Printing without functions */
 
 /**
- * filedes - File descriptor
- *
- * buf - Pointer to data
- *
- * nbyte - Variable holding integer
+ * write - filedes - File descriptor, buf - Pointer to data, nbyte - Variable holding integer
  */
 int write(int filedes, const char *buf, unsigned int nbyte);
 
