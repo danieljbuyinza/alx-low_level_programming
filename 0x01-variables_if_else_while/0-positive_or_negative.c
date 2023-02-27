@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
-/* Assign a random number to the variable n each time the program is executed. Print whether the number stored in the variable n is positive or negative */
+/* Print whether the number stored in the variable n is positive or negative */
 int main(void)
 {
 	int n;
