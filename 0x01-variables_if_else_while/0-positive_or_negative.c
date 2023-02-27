@@ -4,9 +4,9 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
-/* 
+/*
  * main - Print whether number stored in variable is positive or negative
- * */
+ */
 int main(void)
 {
 	int n;
