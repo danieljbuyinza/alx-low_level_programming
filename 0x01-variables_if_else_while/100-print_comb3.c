@@ -19,7 +19,8 @@ int main(void)
 					if (b < 10)
 						putchar('0' + a);
 					putchar('0' + b);
-					if (a != 8 || b != 9) {
+					if (a != 8 || b != 9)
+					{
 						putchar(',');
 						putchar(' ');
 					}
@@ -28,6 +29,7 @@ int main(void)
 		}
 		a++;
 	}
+	putchar('\n');
 	
 	return (0);
 }
