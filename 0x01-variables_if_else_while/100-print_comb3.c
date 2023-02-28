@@ -7,6 +7,7 @@
 int main(void)
 {
 	int a, b;
+
 	while (a < 10)
 	{
 		for (b = 1; b < 10; b++)
