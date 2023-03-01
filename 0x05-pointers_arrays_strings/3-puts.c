@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - Prints a string to stdout
+ * _puts - Prints a string to stdout
  * @str: First operand
 */
 void _puts(char *str)
