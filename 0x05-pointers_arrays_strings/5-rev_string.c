@@ -12,7 +12,7 @@ void rev_string(char *s)
 {
 	int n, length, counter;
 	char *b;
-	int *ptr
+	int *ptr;
 
 	length = strlen(s);
 	b = malloc(length * sizeof(char));
