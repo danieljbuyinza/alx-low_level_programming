@@ -9,11 +9,17 @@ int _putchar(char);
 */
 void rev_string(char *s)
 {
-	int n, length;
+	int n, length, counter;
+	char b[length];
 
 	length = strlen(s);
+	counter = 10;
 
-	for (n = length - 1; n >= 0; n--)
-		strncat(s, &s[n], 1);
-	_putchar('\n');
+	for (n = 0; n < length; n++)
+	{
+		b[n] = s[counter];
+		if (counter >= 0)
+			counter--;
+	}
+	s = b;
 }
