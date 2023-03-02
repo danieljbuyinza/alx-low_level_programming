@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdlib.h>
 #include "main.h"
 
 int _putchar(char);
@@ -12,7 +13,8 @@ void rev_string(char *s)
 	int n, length, counter;
 
 	length = strlen(s);
-	char b[length];
+	char *b;
+	b = malloc(length * sizeof(char));
 	counter = 10;
 
 	for (n = 0; n < length; n++)
