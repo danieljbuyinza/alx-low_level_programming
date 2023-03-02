@@ -10,7 +10,7 @@ int _putchar(char);
 */
 void rev_string(char *s)
 {
-	int n, length, counter;
+	int n, length, counter, *ptr;
 	char *b;
 
 	length = strlen(s);
@@ -23,5 +23,7 @@ void rev_string(char *s)
 		if (counter >= 0)
 			counter--;
 	}
-	s = b;
+
+	*ptr = &s;
+	*ptr = b;
 }
