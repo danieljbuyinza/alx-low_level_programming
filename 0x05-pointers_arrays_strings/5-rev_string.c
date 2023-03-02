@@ -10,8 +10,8 @@ int _putchar(char);
 */
 void rev_string(char *s)
 {
-	int n, length, counter, *ptr;
-	char *b;
+	int n, length, counter;
+	char *b, *ptr;
 
 	length = strlen(s);
 	b = malloc(length * sizeof(char));
