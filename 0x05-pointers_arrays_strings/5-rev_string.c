@@ -11,9 +11,9 @@ int _putchar(char);
 void rev_string(char *s)
 {
 	int n, length, counter;
+	char *b;
 
 	length = strlen(s);
-	char *b;
 	b = malloc(length * sizeof(char));
 	counter = 10;
 
