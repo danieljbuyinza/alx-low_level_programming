@@ -12,7 +12,6 @@ void rev_string(char *s)
 {
 	int n, length, counter;
 	char *b;
-	int *ptr;
 
 	length = strlen(s);
 	b = malloc(length * sizeof(char));
@@ -25,6 +24,5 @@ void rev_string(char *s)
 			counter--;
 	}
 
-	*ptr = &s;
-	*ptr = b;
+	s = &b;
 }
