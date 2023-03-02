@@ -4,7 +4,7 @@
 int _putchar(char);
 
 /**
- * print_rev - Prints a string in reverse
+ * rev_string - Prints a string in reverse
  * @s: First operand
 */
 void rev_string(char *s)
@@ -14,6 +14,6 @@ void rev_string(char *s)
 	length = strlen(s);
 
 	for (n = length - 1; n >= 0; n--)
-		_putchar(s[n]);
+		strncat(s, &s[n], 1);
 	_putchar('\n');
 }
