@@ -10,9 +10,9 @@ int _putchar(char);
 void rev_string(char *s)
 {
 	int n, length, counter;
-	char b[length];
 
 	length = strlen(s);
+	char b[length];
 	counter = 10;
 
 	for (n = 0; n < length; n++)
