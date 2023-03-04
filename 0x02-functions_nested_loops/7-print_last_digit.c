@@ -12,7 +12,6 @@ int print_last_digit(int n)
 
 	if (x < 10)
 		return (x);
-	else if (x >= 10) {
+	else
 		return (x % 10);
-	}
 }
