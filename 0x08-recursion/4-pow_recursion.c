@@ -17,5 +17,5 @@ int powers(int x, int y)
 */
 int _pow_recursion(int x, int y)
 {
-	powers(x, y);
+	return (powers(x, y));
 }
