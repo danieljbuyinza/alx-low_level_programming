@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
-/* powers - Function that calculates the powers */
+/**
+ * powers - Function that calculates the powers
+ * @x: Integer
+ * @y: Power
+ * Return: int
+*/
 int powers(int x, int y)
 {
 	if (y < 0)
