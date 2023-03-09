@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <publib.h>
 #include <string.h>
 #include "main.h"
 
