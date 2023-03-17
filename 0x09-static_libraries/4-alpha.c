@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * _isupper - Entry point
- * @c: Given argument
+ * _isalpha - Entry point
+ * @c: Given character
  * Return: 0
 */
-int _isupper(int c)
+int _isalpha(int c)
 {
         return (0);
 }
