@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int m, n, result;
+	int result;
 
 	if (argc != 3)
 	{
@@ -20,9 +20,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		m = atoi(argv[1]);
-		n = atoi(argv[2]);
-		result = m * n;
+		result = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", result);
 		return (result);
 	}
