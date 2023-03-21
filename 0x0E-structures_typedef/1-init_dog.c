@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * init_dog - Initializes a variable of type struct dog
@@ -11,8 +10,8 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	my_dog = memcpy(&d);
-	my_dog.name = memcpy(&name);
+	my_dog = &d;
+	my_dog.name = &name;
 	my_dog.age = age;
-	my_dog.owner = memcpy(&owner);
+	my_dog.owner = &owner;
 }
