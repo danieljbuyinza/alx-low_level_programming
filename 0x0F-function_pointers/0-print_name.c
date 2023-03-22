@@ -8,6 +8,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	malloc(f(name));
+	(*f)(name);
 }
 
