@@ -3,9 +3,7 @@
 /**
  * print_name - Prints a name
  * @name: Given name
- * @f: Pointer
- *
- * Return: Nothing
+ * @f: Function pointer
 */
 void print_name(char *name, void (*f)(char *))
 {
