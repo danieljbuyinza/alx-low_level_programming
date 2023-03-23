@@ -2,7 +2,7 @@
 
 /**
  * sum_them_all - Returns the sum of all its parameters
- * @n: Given integer
+ * @n: Number of arguments
  * @...: A variable number of integer arguments
  *
  * Return: int
@@ -20,7 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum = sum + va_args(args, int);
+		sum = sum + va_arg(args, int);
 	}
 
 	va_end(args);
