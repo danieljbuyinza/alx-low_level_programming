@@ -20,6 +20,6 @@ char *create_array(unsigned int size, char c)
 	if (size == 0 || arr == NULL)
 		return (NULL);
 
-	return (arr);
+	return (*arr);
 }
 
