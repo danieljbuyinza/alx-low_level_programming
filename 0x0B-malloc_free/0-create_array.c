@@ -17,9 +17,12 @@ char *create_array(unsigned int size, char c)
 	for (x = 0; x < size; x++)
 	arr[x] = c;
 
-	if (size == 0 || arr == NULL)
+	if (size == 0)
 		return (NULL);
 
-	return (*arr);
+	if (arr == NULL)
+		return (NULL);
+
+	return (arr);
 }
 
