@@ -22,7 +22,7 @@ int engine(int n, int potential)
  *
  * Return: int
 */
-void _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
