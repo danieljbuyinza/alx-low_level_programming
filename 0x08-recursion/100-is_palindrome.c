@@ -15,7 +15,7 @@ int engine(char *s, int first, int last)
 		return (1);
 	if (s[first] != s[last])
 		return (0);
-	return (enginer(s, first + 1, last - 1));
+	return (engine(s, first + 1, last - 1));
 }
 
 /**
