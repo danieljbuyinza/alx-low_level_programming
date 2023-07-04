@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	cents = atoi(argv[1]);
 	count = 0;
-	coins[] = {25, 10, 5, 2, 1};
+	coins[5] = {25, 10, 5, 2, 1};
 	num_of_coins = sizeof(coins) / sizeof(coins[0]);
 
 	if (argc != 2)
