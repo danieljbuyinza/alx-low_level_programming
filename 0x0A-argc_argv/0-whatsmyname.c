@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -8,13 +7,9 @@
  * @argv: Argument vector
  * Return: 0
 */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	const char *program;
-
-	program = argv[0];
-
-	_putchar(program);
+	_putchar(argv[0]);
 	_putchar('\n');
 
 	return (0);
