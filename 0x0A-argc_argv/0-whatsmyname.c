@@ -12,10 +12,9 @@ int main(int argc, char *argv[])
 {
 	const char *program;
 
-	*program = argv[0];
+	program = argv[0];
 
-	_putchar(program);
-	_putchar('\n');
+	printf("%s\n", program);
 
 	return (0);
 }
