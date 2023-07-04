@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 
 	*program = argv[0];
 
-	printf("%s\n", program);
+	_putchar(program);
+	_putchar('\n');
 }
 
