@@ -3,6 +3,7 @@
 /**
  * _isupper - Function
  * @c: Given integer
+ * Return: int
 */
 int _isupper(int c)
 {
