@@ -10,12 +10,8 @@
 int main(int argc, char *argv[])
 {
 	const char *program;
-	const char *lastSlash = strrchr(program, '/');
 
 	*program = argv[0];
-
-	if (lastSlash != NULL)
-		program = lastSlash + 1;
 
 	_putchar(program);
 	_putchar('\n');
