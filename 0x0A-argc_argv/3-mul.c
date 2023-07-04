@@ -8,7 +8,7 @@
  * @argv: Argument vector
  * Return: 0
 */
-int main(int __attribute__((unused)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int result;
 
@@ -18,8 +18,8 @@ int main(int __attribute__((unused)) argc, char *argv[])
 		return (1);
 	}
 
-	int n1 = atoi(arg[1]);
-	int n2 = atoi(arg[2]);
+	int n1 = atoi(argv[1]);
+	int n2 = atoi(argv[2]);
 
 	result = n1 * n2;
 
