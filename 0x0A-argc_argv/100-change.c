@@ -10,14 +10,8 @@
 */
 int main(int argc, char *argv[])
 {
-	int cents;
-	int coins[];
-	int num_coins;
-	int count, i;
-
-	coins[] = {25, 10, 5, 2, 1};
-	num_coins = sizeof(coins) / sizeof(coins[0]);
-	count = 0;
+	int num, i, result;
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -25,24 +19,26 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cents = atoi(argv[1]);
+	num = atoi(argv[1]);
+	result = 0;
 
-	if (cents < 0)
+	if (num < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	for (i = 0; i < num_coins; i++)
+	for (i = 0; i < 5 && num >= 0; i++)
 	{
-		while (cents >= coins[i])
+		while (num >= coins[j])
 		{
-			cents -= coins[i];
-			count++;
+			result++;
+			num -= coins[i];
 		}
 	}
 
-	printf("%d\n", count);
+	printf("%d\n", result);
 	return (0);
 }
+
 
