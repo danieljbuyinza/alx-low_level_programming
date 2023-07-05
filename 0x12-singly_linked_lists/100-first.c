@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void tortoise_challenges_hare(void) __attribute__ ((constructor));
-
 /**
  * tortoise_challenges_hare - Prints message before main function
 */
