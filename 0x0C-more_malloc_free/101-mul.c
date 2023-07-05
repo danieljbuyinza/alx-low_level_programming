@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (98);
+	}
 
 	for (i = 0; num1[i] != '\0'; i++)
 	{
