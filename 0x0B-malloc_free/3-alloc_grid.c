@@ -20,8 +20,6 @@ int **alloc_grid(int width, int height)
 	if (elements_width == NULL || elements_height == NULL)
 		return (NULL);
 
-	elements[elements_width][elements_height];
-
 	for (i = 0; i < elements_width; i++)
 	{
 		for (j = 0; j < elements_height; j++)
