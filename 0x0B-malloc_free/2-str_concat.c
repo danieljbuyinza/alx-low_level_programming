@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenated[i] = s1[i];
 	}
-	for (i = 0; i < strlen(concatenated); i++)
+	for (i = 0; i < strlen(s2); i++)
 	{
 		concatenated[strlen(s1) + i] = s2[i];
 	}
