@@ -1,4 +1,6 @@
+#include <stdio>
 #include "main.h"
+
 /**
  * main - Prints the program name followed by a new line
  * @argc: Argument count
