@@ -13,10 +13,9 @@ int main(int argc, char *argv[])
 {
 	int result;
 
-	(void)argc;
-	if (argv[1] == "" || argv[2] == "")
+	if (argc != 3)
 	{
-		printf("%s\n", "Error");
+		printf("Error\n");
 		return (1);
 	}
 
