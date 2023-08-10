@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 			while (input[j])
 			{
-				if (!isdigit([j]))
+				if (!isdigit(input[j]))
 				{
 					printf("Error\n");
 					return (1);
