@@ -11,22 +11,33 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, j, sum;
+	char *input;
 
-	if (argc < 1)
+	if (argc == 1)
 		printf("0\n");
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		if (!isdigit(atoi(argv[i])))
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
-		}
-		sum += atoi(argv[i]);
-	}
+			input = argv[i];
+			j = 0;
 
-	printf("%d\n", sum);
+			while (input[j])
+			{
+				if (!isdigit([j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				j++;
+			}
+
+			sum += atoi(input);
+		}
+
+		printf("%d\n", sum);
+	}
 
 	return (0);
 }
