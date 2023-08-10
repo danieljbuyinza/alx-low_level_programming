@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 	int i, j, sum;
 	char *input;
 
+	sum = 0;
+
 	if (argc == 1)
 		printf("0\n");
 	else
