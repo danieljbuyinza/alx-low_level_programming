@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * array_range - Creates an array of integers
@@ -8,10 +7,10 @@
  *
  * Return: Pointer to newly created array
 */
-
 int *array_range(int min, int max)
 {
-	int *ptr, i;
+	int *ptr;
+	int i;
 
 	if (min > max)
 		return (NULL);
