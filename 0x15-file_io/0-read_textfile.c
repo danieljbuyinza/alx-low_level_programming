@@ -18,12 +18,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	FILE file = fopen(filename, "r");
+	file = fopen(filename, "r");
 
 	if (file == NULL)
 		return (0);
 
-	allocated_space = (char *)maloc(letters);
+	allocated_space = (char *)malloc(letters);
 
 	if (allocated_space == NULL)
 	{
