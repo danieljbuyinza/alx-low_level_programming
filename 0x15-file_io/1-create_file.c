@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <fcntl.h>
 #include "main.h"
 
 /**
@@ -13,6 +14,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file_creation;
+	ssize_t text_written;
 
 	if (filename == NULL)
 		return (-1);
@@ -24,6 +26,7 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	file_creation = open(filename, 0_CREAT | 0_WRONLY | 0_TRUNC);
+	text_written = write(file_creation, text_content, strlen(text_content));
 
 	if (file_creation == NULL)
 		return (-1);
