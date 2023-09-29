@@ -6,7 +6,8 @@
  * @b: Pointer to string of 0 and 1 chars
  * Return: The converted number
 */
-unsigned int binary_to_uint(const char *b) {
+unsigned int binary_to_uint(const char *b)
+{
 	unsigned int result;
 
 	if (b == NULL)
@@ -14,7 +15,8 @@ unsigned int binary_to_uint(const char *b) {
 
 	result = 0;
 
-	while (*b != '\0') {
+	while (*b != '\0')
+	{
 		if (*b != '0' && *b != '1')
 			return (0);
 
