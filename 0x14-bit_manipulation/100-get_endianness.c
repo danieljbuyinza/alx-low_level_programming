@@ -11,7 +11,7 @@ int get_endianness(void)
 	char *byte_pointer;
 
 	check = 1;
-	*byte_pointer = (char *)&check;
+	byte_pointer = (char *)&check;
 
 	if (*byte_pointer == 1)
 		return (1);
