@@ -20,18 +20,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (file == NULL)
 		return (0);
 
-	text_read = fread(buffer, sizeof(char), letters, file);
-	if (text_read < 0)
+	text_read = fread(buffer, sizeof(char), 1, file);
+	while (text_read > 0 && letters > 0)
 	{
-		fclose(file);
-		return (0);
-	}
+		text_written = write(STDOUT_FILENO, buffer, text_read);
+		if (text_written != text_read)
+		{
+			fclose(file);
+			return (0);
+		}
 
-	text_written = write(STDOUT_FILENO, buffer, text_read);
-	if (text_written != text_read)
-	{
-		fclose(file);
-		return (0);
+		letters--;
+		text_read = fread(buffer, sizeof(char), 1, file);
 	}
 
 	fclose(file);
