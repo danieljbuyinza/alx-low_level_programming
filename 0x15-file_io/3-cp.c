@@ -67,11 +67,11 @@ int copyFile(const char *source, const char *d)
 	if (bytes_read == -1)
 	{
 		closeFile(fd_from, source);
-		closeFile(fd_to, destination);
+		closeFile(fd_to, d);
 		return (handleError("Error: Can't read from file", source));
 	}
 
-	if (closeFile(fd_from, source) == -1 || closeFile(fd_to, destination) == -1)
+	if (closeFile(fd_from, source) == -1 || closeFile(fd_to, d) == -1)
 		return (100);
 
 	return (0);
